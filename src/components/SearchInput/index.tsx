@@ -6,7 +6,7 @@ interface IProps {
     onChangeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void
     value: string,
     placeholder: string,
-    onFocus: (e: React.FocusEvent<HTMLInputElement>) => void
+    onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void
 }
 
 const SearchInput = (props: IProps) => {

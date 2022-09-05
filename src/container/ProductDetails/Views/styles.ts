@@ -49,7 +49,7 @@ export const ProductDetailsWrapper = styled(Box)`
     position: sticky;
     margin-top: 276px;
     top: 200px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
     h3 {
         font-size: 20px;
         font-weight: 500;
@@ -89,17 +89,19 @@ export const VariantButton = styled(Flex)`
     }
 `
 
-export const CartButtonFooter = styled(Flex)<{ isAddedToCart: boolean }>`
+export const CartButtonFooter = styled.div<{ isAddedToCart: boolean }>`
+    display: flex;
     position: fixed;
     bottom: 0;
     padding: 16px 20px;
     width: -webkit-fill-available;
+    border-top: 1px solid var(--seperator-color);
     grid-gap: 16px;
     height: 40px;
     box-sizing: content-box;
     background: white;
     > img {
-        border: 1px solid var(--light-grey-text);
+        border: 1px solid var();
         padding: 10px;
         border-radius: 8px;
         cursor: pointer;

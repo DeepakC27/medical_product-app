@@ -19,6 +19,7 @@ export const ProductTabs = styled(Tabs)`
         }
     }
     .tab_panels {
+        > div { padding: 22px 0 38px; }
         p {
             color: var(--light-grey-text);
             font-size: 14px;

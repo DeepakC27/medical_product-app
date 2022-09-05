@@ -16,6 +16,7 @@ import VariantsPopUpContent from './Views/VarientsPopUp'
 import CartComp from './Views/CartComp'
 import Footer from './Views/Footer'
 import ProductContent from './Views/ProductContent'
+import ProductReviews from 'components/ProductReviews'
 
 
 const ProductDetails = () => {
@@ -78,6 +79,7 @@ const ProductDetails = () => {
                 toggleTabs={toggleTabs}
                 selectedTabIdx={selectedTabIdx}
             />
+            <ProductReviews rating={4.9} reviewCount={98} />
         </ProductDetailsWrapper>
         <Footer isAddedToCart={isAddedToCart} toggleIsAddedToCart={toggleIsAddedToCart} />
         <BottomDrawer isOpen={showVariantsPopUp} onClose={toggleVariantPopUp}

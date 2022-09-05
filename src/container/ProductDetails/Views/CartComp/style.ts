@@ -4,7 +4,8 @@ import { Box, Flex } from '@chakra-ui/react'
 export const CartSection = styled(Flex)`
     grid-gap: 16px;
 `
-export const CartButton = styled(Flex)<{ isDisabled?: boolean }>`
+export const CartButton = styled.div<{ isDisabled?: boolean }>`
+    display: flex;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     cursor: pointer;

@@ -4,7 +4,9 @@
   --secondary-color: #242224;
   --light-grey-text: #AAAAAA;
   --light-grey-background: #FAFAFA;
+  --grey: #DEDEDE;
   --background-color: white;
+  --yellow: #FFC107;
   
   --button-txt-color: white;
   --button-bck-color: #142F75;
@@ -48,6 +50,7 @@ input {
 input:hover, input:focus, input:focus-visible {
     border: 1px solid var(--input-border) !important;
     outline: none;
+    box-shadow: none !important;
 }
 input::placeholder {
     color: #A6AFC7;

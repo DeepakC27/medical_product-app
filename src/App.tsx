@@ -10,6 +10,7 @@ import {
 
 const HomePage = React.lazy(() => import('./container/Homepage'))
 const ProductDetails = React.lazy(() => import('./container/ProductDetails'))
+const SearchPage = React.lazy(() => import('./container/SearchPage'))
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path={APP_ROUTES.HOME} element={<HomePage />} />
-          <Route path={APP_ROUTES.SEARCH} element={<div>Search</div>} />
+          <Route path={APP_ROUTES.SEARCH} element={<SearchPage />} />
           <Route path={`${APP_ROUTES.PRODUCT}/:productId`} element={<ProductDetails />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
