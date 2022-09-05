@@ -1,4 +1,4 @@
-import { IPricingTypes } from 'container/Homepage/types'
+import { IPricingTypes } from 'container/ProductDetails/types'
 import {
     ProductCardBox,
     WhislistedImage,

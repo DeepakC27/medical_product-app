@@ -1,6 +1,6 @@
-import { ICategoryType } from "container/Homepage/types"
 import C1 from 'assets/categories/c1.png'
 import C2 from 'assets/categories/c2.png'
+import { ICategoryType } from 'container/Homepage/types'
 
 
 const CategoriesList: ICategoryType[] = [

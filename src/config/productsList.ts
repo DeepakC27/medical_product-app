@@ -1,4 +1,4 @@
-import { IProductsType, IProductInfoType } from "container/Homepage/types";
+import { IProductsType, IProductInfoType } from "container/ProductDetails/types";
 import P1 from 'assets/products/p1.png'
 import P1_XL from 'assets/products/p1_xl.png'
 import P2 from 'assets/products/p2.png'
