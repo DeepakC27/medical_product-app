@@ -10,12 +10,12 @@ export const ProductTabs = styled(Tabs)`
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
-            color: #AAAAAA;
-        }
-        .isActive_tab {
-            background: #DDEBFF;
-            color: #2F5AC7;
-            font-weight: 700;
+            color: var(--light-grey-text);
+            &[aria-selected="true"] {
+                background: #DDEBFF;
+                color: #2F5AC7;
+                font-weight: 700;
+            }
         }
     }
     .tab_panels {

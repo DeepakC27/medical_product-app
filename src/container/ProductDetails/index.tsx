@@ -25,7 +25,6 @@ const ProductDetails = () => {
     } = useParams()
     const navigate = useNavigate()
     const productDetails = ProductDescpList[0]
-    const [selectedTabIdx, setselectedTabIdx] = useState<number>(0)
     const [cartValue, setCartValue] = useState<number>(1)
     const [isAddedToCart, setisAddedToCart] = useState<boolean>(false)
     const [showVariantsPopUp, setshowVariantsPopUp] = useState<boolean>(false)
@@ -46,7 +45,6 @@ const ProductDetails = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [productId])
 
-    const toggleTabs = () => setselectedTabIdx(selectedTabIdx === 0 ? 1 : 0)
     const toggleVariantPopUp = () => setshowVariantsPopUp(!showVariantsPopUp)
     const toggleIsAddedToCart = () => setisAddedToCart(!isAddedToCart)
     
@@ -76,8 +74,6 @@ const ProductDetails = () => {
             <ProductContent
                 description={productDetails.description}
                 materials={productDetails.materials}
-                toggleTabs={toggleTabs}
-                selectedTabIdx={selectedTabIdx}
             />
             <ProductReviews rating={4.9} reviewCount={98} />
         </ProductDetailsWrapper>
