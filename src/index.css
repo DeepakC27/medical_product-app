@@ -1,3 +1,19 @@
+:root {
+
+  --primary-color: #2F5AC7;
+  --secondary-color: #242224;
+  --light-grey-text: #AAAAAA;
+  --background-color: white;
+  
+  --button-txt-color: white;
+  --button-bck-color: #142F75;
+  --button-sec-bck-color: #5A6582;
+
+  --input-border: #DAE4FF;
+  --seperator-color: #DEDEDE;
+  --card-box-shadow: rgba(112, 135, 216, 0.26);
+}
+
 body {
   margin: 0;
 }
@@ -25,18 +41,13 @@ code {
     monospace;
 }
 
-:root {
-
-  --primary-color: #2F5AC7;
-  --secondary-color: #242224;
-  --light-grey-text: #AAAAAA;
-  --background-color: white;
-  
-  --button-txt-color: white;
-  --button-bck-color: #142F75;
-  --button-sec-bck-color: #5A6582;
-
-  --input-border: #DAE4FF;
-  --seperator-color: #DEDEDE;
-  --card-box-shadow: rgba(112, 135, 216, 0.26);
+input {
+  border: 1px solid var(--input-border);
+}
+input:hover, input:focus, input:focus-visible {
+    border: 1px solid var(--input-border) !important;
+    outline: none;
+}
+input::placeholder {
+    color: #A6AFC7;
 }
